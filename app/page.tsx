@@ -1,189 +1,189 @@
 "use client";
-import {
-  Sparkles,
-  LayoutDashboard,
-  ShieldCheck,
-  Zap,
-} from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white overflow-hidden">
+    <main className="min-h-screen bg-[#f5f7fb] text-black">
 
-      {/* Background Glow */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-500/20 blur-[120px]" />
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-500/20 blur-[120px]" />
+      {/* Header */}
+      <header className="flex items-center justify-between px-8 md:px-16 py-5 bg-white border-b border-gray-200 sticky top-0 z-50">
 
-      {/* Navbar */}
-      <header className="relative z-50 flex items-center justify-between px-8 md:px-16 py-6 border-b border-white/10 backdrop-blur-xl">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center">
-            <Sparkles size={20} />
-          </div>
+        <h1 className="text-2xl font-bold tracking-tight">
+          AI App Generator
+        </h1>
 
-          <h1 className="text-2xl font-bold tracking-wide">
-            AI App Generator
-          </h1>
-        </div>
+        <nav className="hidden md:flex items-center gap-8 text-gray-600 font-medium">
+          <a href="#" className="hover:text-black transition">
+            Home
+          </a>
 
-        <nav className="hidden md:flex items-center gap-10 text-gray-300">
-          <a href="#" className="hover:text-white transition">
+          <a href="#" className="hover:text-black transition">
             Features
           </a>
 
-          <a href="#" className="hover:text-white transition">
+          <a href="#" className="hover:text-black transition">
             Builder
           </a>
 
-          <a href="#" className="hover:text-white transition">
-            Pricing
-          </a>
-
-          <a href="#" className="hover:text-white transition">
-            Docs
+          <a href="#" className="hover:text-black transition">
+            Contact
           </a>
         </nav>
 
-        <button className="bg-white text-black px-5 py-2 rounded-2xl font-semibold hover:scale-105 transition">
-          Launch App
+        <button className="bg-black text-white px-5 py-2 rounded-xl hover:bg-gray-800 transition">
+          Get Started
         </button>
       </header>
 
       {/* Hero Section */}
-      <section className="relative z-10 flex flex-col items-center text-center px-6 pt-28 pb-24">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 pt-24 pb-20">
 
-        <div className="mb-6 border border-white/10 bg-white/5 backdrop-blur-xl px-5 py-2 rounded-full text-sm text-gray-300">
-          Dynamic Metadata Driven Runtime
-        </div>
+        <div className="max-w-3xl">
 
-        <h2 className="text-5xl md:text-7xl font-extrabold leading-tight max-w-5xl">
-          Build Powerful Apps
-          <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-            {" "}
-            From JSON
-          </span>
-        </h2>
+          <p className="text-blue-600 font-semibold mb-4">
+            Dynamic Frontend Runtime
+          </p>
 
-        <p className="text-gray-400 text-lg md:text-xl mt-8 max-w-3xl leading-relaxed">
-          Generate dashboards, forms, tables, layouts, and workflows
-          dynamically using intelligent configuration-driven rendering.
-        </p>
+          <h2 className="text-5xl md:text-6xl font-bold leading-tight">
+            Build modern apps
+            from simple JSON
+          </h2>
 
-        <div className="flex flex-col sm:flex-row gap-5 mt-12">
-          <button className="bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-4 rounded-2xl font-semibold text-lg hover:scale-105 transition duration-300 shadow-2xl shadow-blue-500/20">
-            Start Building
-          </button>
+          <p className="text-gray-600 text-lg mt-8 leading-relaxed">
+            Generate forms, dashboards, tables, and layouts dynamically
+            using a clean metadata-driven rendering engine.
+          </p>
 
-          <button className="border border-white/20 bg-white/5 backdrop-blur-xl px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-white/10 transition">
-            Live Preview
-          </button>
+          <div className="flex gap-4 mt-10">
+            <button className="bg-black text-white px-7 py-4 rounded-2xl font-semibold hover:scale-105 transition">
+              Start Building
+            </button>
+
+            <button className="bg-white border border-gray-300 px-7 py-4 rounded-2xl font-semibold hover:bg-gray-100 transition">
+              Live Demo
+            </button>
+          </div>
+
         </div>
 
       </section>
 
-      {/* Dashboard Preview */}
-      <section className="relative z-10 px-6 md:px-16 pb-28">
+      {/* Features */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 pb-24">
 
-        <div className="max-w-6xl mx-auto bg-white/5 border border-white/10 rounded-[40px] p-8 backdrop-blur-2xl shadow-2xl">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {/* Card 1 */}
+          <div className="bg-white rounded-3xl p-8 border border-gray-200 hover:shadow-xl transition duration-300">
 
-            {/* Card 1 */}
-            <div className="bg-gradient-to-br from-blue-500/20 to-transparent border border-white/10 rounded-3xl p-6 hover:scale-[1.02] transition">
+            <div className="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center text-2xl mb-6">
+              ⚡
+            </div>
 
-              <div className="w-14 h-14 rounded-2xl bg-blue-500/20 flex items-center justify-center mb-5">
-                <LayoutDashboard size={28} className="text-blue-400" />
-              </div>
+            <h3 className="text-2xl font-bold mb-4">
+              Fast Rendering
+            </h3>
 
-              <h3 className="text-2xl font-bold mb-3">
-                Dynamic UI
+            <p className="text-gray-600 leading-relaxed">
+              Render complete applications instantly from JSON configuration.
+            </p>
+          </div>
+
+          {/* Card 2 */}
+          <div className="bg-white rounded-3xl p-8 border border-gray-200 hover:shadow-xl transition duration-300">
+
+            <div className="w-14 h-14 rounded-2xl bg-green-100 flex items-center justify-center text-2xl mb-6">
+              🛡️
+            </div>
+
+            <h3 className="text-2xl font-bold mb-4">
+              Error Safe
+            </h3>
+
+            <p className="text-gray-600 leading-relaxed">
+              Handles invalid schemas and broken configs gracefully.
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white rounded-3xl p-8 border border-gray-200 hover:shadow-xl transition duration-300">
+
+            <div className="w-14 h-14 rounded-2xl bg-purple-100 flex items-center justify-center text-2xl mb-6">
+              🎨
+            </div>
+
+            <h3 className="text-2xl font-bold mb-4">
+              Dynamic UI
+            </h3>
+
+            <p className="text-gray-600 leading-relaxed">
+              Create forms, dashboards, and layouts with reusable components.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Preview Section */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 pb-28">
+
+        <div className="bg-white rounded-[32px] border border-gray-200 p-8 shadow-sm">
+
+          <div className="flex items-center justify-between mb-8">
+
+            <div>
+              <h3 className="text-3xl font-bold">
+                Live Runtime Preview
               </h3>
 
-              <p className="text-gray-400 leading-relaxed">
-                Instantly render dashboards, forms, and tables directly
-                from JSON configuration.
+              <p className="text-gray-500 mt-2">
+                Dynamic rendering from metadata configuration.
               </p>
             </div>
 
-            {/* Card 2 */}
-            <div className="bg-gradient-to-br from-purple-500/20 to-transparent border border-white/10 rounded-3xl p-6 hover:scale-[1.02] transition">
-
-              <div className="w-14 h-14 rounded-2xl bg-purple-500/20 flex items-center justify-center mb-5">
-                <ShieldCheck size={28} className="text-purple-400" />
-              </div>
-
-              <h3 className="text-2xl font-bold mb-3">
-                Error Safe
-              </h3>
-
-              <p className="text-gray-400 leading-relaxed">
-                Handles broken schemas, invalid configs, and unknown
-                components gracefully.
-              </p>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-gradient-to-br from-pink-500/20 to-transparent border border-white/10 rounded-3xl p-6 hover:scale-[1.02] transition">
-
-              <div className="w-14 h-14 rounded-2xl bg-pink-500/20 flex items-center justify-center mb-5">
-                <Zap size={28} className="text-pink-400" />
-              </div>
-
-              <h3 className="text-2xl font-bold mb-3">
-                Lightning Fast
-              </h3>
-
-              <p className="text-gray-400 leading-relaxed">
-                Built using Next.js, TailwindCSS, and TypeScript for
-                scalable frontend architecture.
-              </p>
-            </div>
+            <span className="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">
+              Active
+            </span>
 
           </div>
 
-          {/* Fake Dashboard */}
-          <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
-            <div className="bg-black/40 border border-white/10 rounded-3xl p-6">
-              <div className="flex justify-between mb-5">
-                <h4 className="text-xl font-semibold">
-                  Generated Form
-                </h4>
+            {/* Form */}
+            <div className="border border-gray-200 rounded-3xl p-6">
 
-                <span className="text-green-400 text-sm">
-                  Active
-                </span>
-              </div>
+              <h4 className="text-xl font-semibold mb-6">
+                Generated Form
+              </h4>
 
               <div className="space-y-4">
+
                 <input
                   type="text"
                   placeholder="Username"
-                  className="w-full bg-white/5 border border-white/10 rounded-xl p-4 outline-none focus:border-blue-500"
+                  className="w-full border border-gray-300 rounded-xl p-4 outline-none focus:border-black"
                 />
 
                 <input
                   type="email"
                   placeholder="Email"
-                  className="w-full bg-white/5 border border-white/10 rounded-xl p-4 outline-none focus:border-blue-500"
+                  className="w-full border border-gray-300 rounded-xl p-4 outline-none focus:border-black"
                 />
 
-                <button className="w-full bg-gradient-to-r from-blue-500 to-purple-500 py-4 rounded-xl font-semibold">
+                <button className="w-full bg-black text-white py-4 rounded-xl font-semibold hover:bg-gray-800 transition">
                   Submit
                 </button>
+
               </div>
             </div>
 
-            <div className="bg-black/40 border border-white/10 rounded-3xl p-6">
+            {/* Code Preview */}
+            <div className="bg-black rounded-3xl p-6 overflow-hidden">
 
-              <h4 className="text-xl font-semibold mb-6">
-                Runtime Config
-              </h4>
-
-              <div className="bg-black rounded-2xl p-5 text-sm text-green-400 overflow-x-auto">
+              <p className="text-green-400 text-sm leading-8 whitespace-pre-wrap">
 {`{
   "type": "form",
-  "layout": "grid",
+  "layout": "single-column",
   "components": [
     {
       "type": "input",
@@ -195,13 +195,16 @@ export default function Home() {
     }
   ]
 }`}
-              </div>
+              </p>
+
             </div>
 
           </div>
 
         </div>
+
       </section>
+
     </main>
   );
 }
