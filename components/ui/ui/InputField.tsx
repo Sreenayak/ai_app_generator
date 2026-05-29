@@ -13,10 +13,10 @@ export default function InputField({
         {label}
       </label>
 
-      <input
-        placeholder={placeholder}
-        className="w-full border border-gray-300 rounded-xl p-3"
-      />
+          <input
+            placeholder={placeholder}
+            className="w-full bg-slate-800/40 border border-slate-700/40 text-slate-100 placeholder-slate-400 rounded-xl p-3"
+          />
     </div>
   );
 }

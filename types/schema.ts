@@ -1,13 +1,16 @@
-export interface UIComponent {
-  id: string;
-  type: string;
-  label?: string;
-  placeholder?: string;
-  text?: string;
-}
+import { UIComponent } from "./component";
+
+export type LayoutType = "single-column" | "two-column" | "grid" | "three-column" | "dashboard";
 
 export interface UIConfig {
+  id?: string;
   title: string;
-  layout?: string;
+  description?: string;
+  layout?: LayoutType;
   components: UIComponent[];
+  theme?: {
+    primary?: string;
+    secondary?: string;
+    accent?: string;
+  };
 }
