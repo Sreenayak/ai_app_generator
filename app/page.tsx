@@ -36,7 +36,6 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 pt-24 pb-20">
-
         <div className="max-w-3xl">
 
           <p className="text-blue-600 font-semibold mb-4">
