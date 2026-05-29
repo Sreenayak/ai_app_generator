@@ -1,7 +1,9 @@
 import { UIConfig } from "@/types/schema";
 
 export const sampleConfig: UIConfig = {
-  title: "User Registration",
+  title: "Registration Form",
+
+  layout: "single-column",
 
   components: [
     {

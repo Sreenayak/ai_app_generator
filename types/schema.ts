@@ -8,5 +8,6 @@ export interface UIComponent {
 
 export interface UIConfig {
   title: string;
+  layout?: string;
   components: UIComponent[];
 }

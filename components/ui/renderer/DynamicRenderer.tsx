@@ -1,15 +1,13 @@
 import ComponentFactory from "./ComponentFactory";
-
-interface Props {
-  config: any;
-}
+import LayoutRenderer from "./LayoutRenderer";
 
 export default function DynamicRenderer({
   config,
-}: Props) {
+}: any) {
   return (
-    <div className="space-y-5">
-
+    <LayoutRenderer
+      layout={config.layout}
+    >
       {config.components.map(
         (component: any) => (
           <ComponentFactory
@@ -18,7 +16,6 @@ export default function DynamicRenderer({
           />
         )
       )}
-
-    </div>
+    </LayoutRenderer>
   );
 }
