@@ -1,5 +1,5 @@
-import InputField from "@/components/ui/InputField";
-import ButtonField from "@/components/ui/ButtonField";
+import InputField from "@/components/ui/ui/InputField";
+import ButtonField from "@/components/ui/ui/ButtonField";
 
 export const componentRegistry = {
   input: InputField,
